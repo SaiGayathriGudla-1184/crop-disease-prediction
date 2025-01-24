@@ -1,0 +1,202 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f9f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Global container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #2d8c4a;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  header nav ul li {
+    margin-left: 30px;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  
+  header nav ul li a:hover {
+    color: #a8d08d;
+  }
+  
+  /* Hero Section */
+  #hero {
+    background-image: url('https://www.pexels.com/photo/aerial-photography-of-green-plants-2089212/');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 50px;
+    text-align: center;
+    border-radius: 15px;
+  }
+  
+  #hero h2 {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  
+  #hero p {
+    font-size: 1.2rem;
+    margin: 15px 0;
+  }
+  
+  #hero .btn {
+    background-color: #4cbb7f;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  #hero .btn:hover {
+    background-color: #3c9e64;
+  }
+  
+  /* Problem Section */
+  section {
+    padding: 60px 20px;
+  }
+  
+  #problem {
+    background-color: #e0f7e4;
+    border-radius: 10px;
+  }
+  
+  #solution {
+    background-color: #eaf2e0;
+    border-radius: 10px;
+  }
+  
+  #features {
+    background-color: #d9f2d2;
+    border-radius: 10px;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    color: #2d8c4a;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  ul li::before {
+    content: '✔️';
+    margin-right: 10px;
+  }
+  
+  #contact {
+    background-color: #eaf2e0;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  #contact a {
+    color: #2d8c4a;
+    text-decoration: none;
+  }
+  
+  #contact a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #2d8c4a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+  
+    header nav ul {
+      flex-direction: column;
+      margin-top: 20px;
+    }
+  
+    header nav ul li {
+      margin: 10px 0;
+    }
+  
+    #hero {
+      height: 80vh;
+      background-position: top;
+    }
+  
+    #hero h2 {
+      font-size: 2.2rem;
+    }
+  
+    #hero p {
+      font-size: 1rem;
+    }
+  }
+  
